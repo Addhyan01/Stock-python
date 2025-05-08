@@ -7,7 +7,7 @@ from datetime import date
 
 @st.cache_data
 def get_nifty_200_tickers():
-    df = pd.read_csv("nifty_200_tickers.csv")  # Must be in same folder
+    df = pd.read_csv("nifty_200_tickers.csv", encoding="ISO-8859-1")  # Must be in same folder
     return df
 
 # --- Page Config and Styling ---
